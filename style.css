@@ -1,5 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
+@media (max-width: 920px) {
+    body{
+        font-size: 16px;
+    }
+    .wrapper{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 45px;
+        max-width: 600px;
+    }
+    h2{
+        font-size: 25px;
+        margin-top: 74px;
+    }
+    .title{
+        top: calc(50% - 67px - 75px);
+    }
+    .stat{
+        max-width: 500px;
+        margin: -106px auto 0;
+        padding-top: 41px;
+        padding-bottom: 35px;
+    }
+    .stat-item h2{
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+    .stat-item h3{
+        font-size: 20px;
+    }
+    .box-party h3{
+        margin-top: 30px;
+    }
+    .box-contact h3{
+        font-size: 30px;
+    }
+    .box-contact p {
+        font-size: 16px;
+    }
+    .grid{
+        grid-gap: 16px;
+        margin-top: 59px;
+        margin-bottom: 91px;
+    }
+    .box-feedback{
+        margin-top: 32px;
+        margin-bottom: 66px;
+        flex-wrap: wrap;
+    }
+    .feedback {
+        margin-bottom: 20px;
+    }
+    .box-feedback>div{
+        box-sizing: content-box;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .footer-contact {
+        align-items: flex-start;
+        margin-top: 61px;
+        flex-wrap: wrap;
+    }
+    .footer-contact>div {
+        flex-basis: 49%;
+        max-width: 49%;
+    }
+    .footer-contact h3 .footer-contact-info{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 32px;
+    }
+
+}
+
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -18,7 +95,7 @@ h1 {
     color: #a1a1a1;
     font-size: 64px;
     text-transform: uppercase;
-    max-width: 950px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -37,6 +114,8 @@ h2 {
     max-width: 1100px;
     margin: 0 auto;
     margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wrapper-gray {
@@ -294,7 +373,7 @@ h2 {
 .footer {
     background: #404149;
     padding: 10px 0px;
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
 .box-party-title {
@@ -330,9 +409,8 @@ h2 {
     display: block;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 640px;
-    height: 360px;
-    border: 3px solid white;
+    max-width: 660px;
+    max-height: 380px;
 }
 
 .header {
@@ -347,7 +425,6 @@ h2 {
 .title-content {
     color: #F7654A;
 }
-
 
 .menu__contents {
     text-align: center;
@@ -365,6 +442,15 @@ h2 {
     color: #F7654A;
 }
 
+.menu-anchor {
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("./image/drift-logo.jpg");
+    background-size: cover;
+    opacity:0.95;
+}
+
 .header {
     background-image: url("./image/header-2.jpg");
     background-repeat: no-repeat;
@@ -379,7 +465,7 @@ h2 {
 }
 
 .slideshow-container {
-    max-width: 800px;
+    max-width: 900px;
     position: relative;
     margin: auto;
 }
@@ -474,18 +560,6 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-body {
-    font-family: "Nunito", sans-serif;
-    color: #333;
-    font-weight: 300;
-    line-height: 1.6;
 }
 
 .container {
